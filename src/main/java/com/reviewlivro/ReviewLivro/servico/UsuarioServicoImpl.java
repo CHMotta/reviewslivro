@@ -8,7 +8,7 @@ import com.reviewlivro.ReviewLivro.enums.PerfilUsuarioEnum;
 import com.reviewlivro.ReviewLivro.repositorio.UsuarioRepositorio;
 import org.springframework.stereotype.Service;
 
-import java.math.BigDecimal;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -83,6 +83,7 @@ public class UsuarioServicoImpl implements UsuarioServico{
     public UsuarioEntidade buscarEntidadePorId(Long id){
         return usuarioRepositorio.findById(id).orElseThrow();
     }
+
 
 }
 

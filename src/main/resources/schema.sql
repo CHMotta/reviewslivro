@@ -9,6 +9,7 @@ create table if not exists usuario(
 create table if not exists livro(
 	id bigserial primary key,
 	titulo varchar (256) not null,
+	subtitulo VARcHAR (255),
 	autor varchar (256) not null,
 	thumbnail varchar (256),
 	sinopse varchar (256) not null,

@@ -22,6 +22,10 @@ public class LivroEntidade {
     @Column(name = "autor_list", nullable = false)
     private String autor;
 
+    @Column(name = "subtitulo")
+    private String subtitulo;
+
+
     @Column(name = "thumbnail", nullable = false)
     private String thumbnail;
 
@@ -81,6 +85,22 @@ public class LivroEntidade {
 
     public void setStatusReview(StatusReviewsEnum statusReview) {
         this.statusReview = statusReview;
+    }
+
+    public String getThumbnail() {
+        return thumbnail;
+    }
+
+    public void setThumbnail(String thumbnail) {
+        this.thumbnail = thumbnail;
+    }
+
+    public String getSubtitulo() {
+        return subtitulo;
+    }
+
+    public void setSubtitulo(String subtitulo) {
+        this.subtitulo = subtitulo;
     }
 }
 

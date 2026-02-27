@@ -15,4 +15,5 @@ public interface UsuarioServico {
     UsuarioRespostaDto atualizar (Long id, UsuarioRequisicaoDto dto);
 
     UsuarioEntidade buscarEntidadePorId(Long id);
+
 }

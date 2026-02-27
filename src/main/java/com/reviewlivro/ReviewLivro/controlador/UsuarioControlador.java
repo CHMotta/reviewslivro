@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 @RestController
-@RequestMapping("api/usuario")
+@RequestMapping("api/usuarios")
 public class UsuarioControlador {
 
     private final UsuarioServico usuarioServico;
@@ -29,9 +29,11 @@ public class UsuarioControlador {
         return usuarioServico.criarUsuario(dto);
     }
 
-    @PutMapping("perfil/{id}")
+    @PutMapping("/{id}")
     public UsuarioRespostaDto put (@PathVariable Long id, @RequestBody UsuarioRequisicaoDto dto){
         return usuarioServico.atualizar(id, dto);
     }
+
+
 
 }
